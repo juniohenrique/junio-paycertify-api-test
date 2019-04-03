@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "PokeAPI Testing Project",
   "scripts": {
-    "test": "mocha -R spec --recursive",
-    "test-contract": "mocha test/contract/*.js"
+    "test": "mocha -R mocha-junit-reporter --reporter-options mochaFile=./result/tests.xml --recursive",
+    "test-contract": "mocha --reporter doc test/contract/*.js",
+    "test-service": "mocha --reporter doc test/services/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "chai": "^4.2.0",
     "joi": "^14.3.1",
     "joi-assert": "^0.0.3",
+    "mocha-junit-reporter": "^1.21.0",
     "supertest": "^4.0.2"
   }
 }
