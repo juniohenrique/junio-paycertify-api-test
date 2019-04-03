@@ -21,7 +21,7 @@ jobs:
             - node_modules
   test:
     docker:
-      - image: circlecinode:10.15.3
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - run:
@@ -43,4 +43,4 @@ workflows:
           filters:
             branches:
               ignore:
-                - master
+                - dev
