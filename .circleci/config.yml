@@ -15,6 +15,9 @@ jobs:
       - run:
           name: Install npm wee
           command: npm install
+      - run:
+          name: Install npm mocha
+          command: npm install mocha
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
