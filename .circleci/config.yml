@@ -35,3 +35,8 @@ jobs:
 
       # run tests!
       - run: npm test
+
+      # store artifacts
+      - store_artifacts:
+          path: results/tests.xml
+          destination: tests
