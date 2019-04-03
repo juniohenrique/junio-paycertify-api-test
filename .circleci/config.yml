@@ -13,11 +13,11 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: Install npm wee
-          command: npm install
-      - run:
           name: Install npm mocha
           command: npm install mocha
+      - run:
+          name: Install npm wee
+          command: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
