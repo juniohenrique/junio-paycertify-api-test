@@ -1,0 +1,31 @@
+{
+  "name": "junio-paycertify-api-test",
+  "version": "1.0.0",
+  "description": "PokeAPI Testing Project",
+  "scripts": {
+    "test": "mocha -R spec --recursive",
+    "test-contract": "mocha test/contract/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniohenrique/junio-paycertify-api-test.git"
+  },
+  "keywords": [
+    "API",
+    "Pokeapi",
+    "Testing",
+    "PayCertify"
+  ],
+  "author": "Junio Henrique Miguel de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniohenrique/junio-paycertify-api-test/issues"
+  },
+  "homepage": "https://github.com/juniohenrique/junio-paycertify-api-test#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "joi": "^14.3.1",
+    "joi-assert": "^0.0.3",
+    "supertest": "^4.0.2"
+  }
+}
